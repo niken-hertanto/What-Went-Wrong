@@ -9,6 +9,18 @@ using System.Linq;
 
 public class PageManager : MonoBehaviour {
 
+    /* **********************************************************************************
+     *      Page Manager
+     *          - Determines what type of page the player is on
+     *          - If the player clicks on the arrows, a new speech bubble will show
+     *          - After all speech bubbles for the page shows, the page will turn
+     *          - If it's a puzzle page, then turn on the gesture recognizer and
+     *              determine whether the player solved the puzzle or not. If yes,
+     *              turn the page.
+     *          - If it's a diary page, highlighted words is animated to bring focus 
+     *              to it
+     ************************************************************************************ */
+
     Recognizer Recognizer;
     DrawDetector dd;
 
